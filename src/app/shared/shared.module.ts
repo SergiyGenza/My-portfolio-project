@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
+import { ExperianceCardComponent } from './experiance-card/experiance-card.component';
 
 
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
+    ExperianceCardComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    CardComponent
+    CardComponent,
+    ExperianceCardComponent
   ],
 })
 export class SharedModule { }

@@ -1,0 +1,43 @@
+@import "/src/assets/style/utils/variables";
+@import "/src/assets/style/utils/mixins";
+
+.about {
+  padding: 120px 0;
+  color: $text-color-dark;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    max-width: 700px;
+  }
+}
+
+.description {
+  &__title {
+  }
+  &__text {
+    max-width: 708px;
+    font-size: 18px;
+
+    @include Poppins-regular;
+  }
+}
+.experiance {
+  // max-width: 700px;
+
+  &__title {
+  }
+  &__group {
+  }
+}
+.education {
+  &__title {
+  }
+  &__group {
+  }
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 39px;
+}

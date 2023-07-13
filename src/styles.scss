@@ -3,4 +3,8 @@
 @import "./assets/style/utils/variables";
 @import "./assets/style/utils/mixins";
 
-@import "./assets/style/base"
+@import "./assets/style/base";
+
+body {
+  background-color: $bg-dark;
+}

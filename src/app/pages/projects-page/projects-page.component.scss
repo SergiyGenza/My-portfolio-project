@@ -1,0 +1,23 @@
+@import "/src/assets/style/utils/variables";
+@import "/src/assets/style/utils/mixins";
+
+.projects {
+  background-color: $bg-dark;
+  padding: 100px;
+  &__title {
+    color: $text-color-dark;
+    font-size: 48px;
+    text-align: center;
+    
+    @include Poppins-bold;
+    margin-bottom: 100px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
+    justify-items: center;
+    gap: 50px;
+    row-gap: 65px;
+  }
+}

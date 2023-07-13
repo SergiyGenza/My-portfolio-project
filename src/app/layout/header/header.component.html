@@ -4,42 +4,32 @@
       <div class="top-bar__title">
         <h3 class="title"> My Portfolio</h3>
       </div>
-
-      <button class="dark-mode-btn " id="dark-mode-btn" (click)="darkMode()" [ngClass]="{'dark-mode-btn--active': isDarkMode}">
-        <img class="dark-mode-btn__icon" src="../assets/images/icons/sun.svg" alt="light mode">
-        <img class="dark-mode-btn__icon" src="../assets/images/icons/moon.svg" alt="dark mode">
-      </button>
-
       <div class="top-bar__nav">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="">
+              <a href="projects">
                 Projects
               </a>
             </li>
             <li class="nav__item">
-              <a href="">
+              <a href="skills">
                 Skills
               </a>
             </li>
             <li class="nav__item">
-              <a href="">
-                Contacts
+              <a href="about-me">
+                About me
               </a>
             </li>
           </ul>
         </nav>
       </div>
-    </div>
-    <div class="presentation">
-      <div class="presentation__title">
-        <h1>Hi, my name is Serhiy
-          <br>a frontend developer
-        </h1>
-      </div>
-      <div class="presentation__text">with passion for learning and creating.</div>
-      <button class="btn__primary">Download CV</button>
+      <button class="dark-mode-btn " id="dark-mode-btn" (click)="darkMode()"
+        [ngClass]="{'dark-mode-btn--active': isDarkMode}">
+        <img class="dark-mode-btn__icon" src="../assets/images/icons/sun.svg" alt="light mode">
+        <img class="dark-mode-btn__icon" src="../assets/images/icons/moon.svg" alt="dark mode">
+      </button>
     </div>
   </div>
 </header>

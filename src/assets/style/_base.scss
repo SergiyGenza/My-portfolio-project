@@ -18,3 +18,21 @@ a {
   width: 160px;
   height: 48px;
 }
+
+.title {
+  @include Poppins-bold;
+}
+
+.devider {
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: $devide-line;
+  }
+}
