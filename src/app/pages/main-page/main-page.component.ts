@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MAIN_PAGE } from '../../common/mocks/main-page';
 
 @Component({
   selector: 'app-main-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent {
-
+  mainpage = MAIN_PAGE;
 }

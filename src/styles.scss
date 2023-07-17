@@ -8,3 +8,28 @@
 body {
   background-color: $bg-dark;
 }
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+app-root {
+  min-height: 100%;
+  display: block;
+  position: relative;
+  padding: 15rem 0 20rem 0; // height of the footer
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

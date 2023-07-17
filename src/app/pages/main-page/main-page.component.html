@@ -1,12 +1,16 @@
 <main class="main">
   <section class="presentation">
     <div class="presentation__title">
-      <h1>Hi, my name is Serhiy
-        <br>a frontend developer
+      <h1> {{mainpage.title}}
       </h1>
     </div>
-    <div class="presentation__text">with passion for learning and creating.</div>
-    <button class="btn__primary">Download CV</button>
+    <div class="presentation__text">{{mainpage.text}}</div>
+    <button class="btn__primary">{{mainpage.bntText}}</button>
   </section>
-  <app-projects-page></app-projects-page>
+  <section class="tech-stack">
+    <app-tech-stack></app-tech-stack>
+  </section>
+  <section class="projects">
+    <app-projects-page></app-projects-page>
+  </section>
 </main>

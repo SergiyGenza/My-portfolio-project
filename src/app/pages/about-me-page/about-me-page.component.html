@@ -3,29 +3,26 @@
     <div class="about__wrapper">
       <div class="description">
         <h2 class="description__title title">
-          About Me
+          {{mock.title}}
         </h2>
         <p class="description__text">
-          The Generator App is an online tool that helps you to export ready-made templates ready to work as your future
-          website.
-          It helps you to combine slides, panels and other components and export it as a set of static files:
-          HTML/CSS/JS.
+          {{mock.description}}
         </p>
       </div>
       <div class="experiance">
         <h2 class="experiance__title title">
-          Work Experience
+          {{exp.title}}
         </h2>
-        <div class="experiance__group">
-          <app-experiance-card class="devider"></app-experiance-card>
+        <div class="experiance__group" *ngFor="let experiance of exp.experiance">
+          <app-experiance-card [content]="experiance" class="devider"></app-experiance-card>
         </div>
       </div>
       <div class="education">
         <h2 class="education__title title">
-          Work Experience
+          {{ed.title}}
         </h2>
-        <div class="education__group">
-          <app-experiance-card class="devider"></app-experiance-card>
+        <div class="education__group" *ngFor="let education of ed.education">
+          <app-experiance-card [content]="education" class="devider"></app-experiance-card>
         </div>
       </div>
     </div>

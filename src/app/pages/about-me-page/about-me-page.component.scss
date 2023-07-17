@@ -2,7 +2,8 @@
 @import "/src/assets/style/utils/mixins";
 
 .about {
-  padding: 120px 0;
+  display: flex;
+  text-align: justify;
   color: $text-color-dark;
   &__wrapper {
     display: flex;
@@ -23,8 +24,6 @@
   }
 }
 .experiance {
-  // max-width: 700px;
-
   &__title {
   }
   &__group {

@@ -1,9 +1,7 @@
 @import "/src/assets/style/utils/variables";
 @import "/src/assets/style/utils/mixins";
 
-
 .footer {
-  // max-height: 200px;
   padding: 50px 0;
   background-color: black;
 }
@@ -21,7 +19,6 @@
   color: $white;
   text-align: center;
   font-size: 16px;
-  
   line-height: 150%;
   letter-spacing: -0.5px;
   @include DM-regular;
