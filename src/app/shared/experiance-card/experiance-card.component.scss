@@ -10,13 +10,13 @@
   
 
   &__title {
-    color: $text-color-dark;
+    color: var(--text-color);
     font-size: 20px;
     letter-spacing: 1px;
     @include Poppins-regular;
   }
   &__company {
-    color: $text-color-secondary-dark;
+    color: var(--text-color-secondary);
     letter-spacing: 1px;
     @include Poppins-medium;
   }
@@ -30,7 +30,7 @@
     padding: 3px 20px;
   }
   &__time {
-    color: $text-color-secondary-dark;
+    color: var(--text-color-secondary);
     letter-spacing: 1px;
     @include Poppins-medium;
   }

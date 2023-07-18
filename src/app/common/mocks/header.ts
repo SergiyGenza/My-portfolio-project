@@ -1,16 +1,17 @@
 export const HEADER = {
-  title: 'My Portfolio',
+  title: 'Hello!',
+  link: '#presentation',
   nav: [
     {
-      link: 'projects',
-      name: 'Projects'
-    },
-    {
-      link: 'tech-stack',
+      link: '#tech-stack',
       name: 'Tech Stack'
     },
     {
-      link: 'about-me',
+      link: '#projects',
+      name: 'Projects'
+    },
+    {
+      link: '#about-me',
       name: 'About me'
     }
   ]

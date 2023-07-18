@@ -1,5 +1,5 @@
 <main class="main">
-  <section class="presentation">
+  <section class="presentation wrapper" id="presentation">
     <div class="presentation__title">
       <h1> {{mainpage.title}}
       </h1>
@@ -7,10 +7,13 @@
     <div class="presentation__text">{{mainpage.text}}</div>
     <button class="btn__primary">{{mainpage.bntText}}</button>
   </section>
-  <section class="tech-stack">
+  <section class="tech-stack wrapper" id="tech-stack">
     <app-tech-stack></app-tech-stack>
   </section>
-  <section class="projects">
+  <section class="projects wrapper-projects" id="projects">
     <app-projects-page></app-projects-page>
+  </section>
+  <section class="about-me wrapper" id="about-me">
+    <app-about-me-page></app-about-me-page>
   </section>
 </main>

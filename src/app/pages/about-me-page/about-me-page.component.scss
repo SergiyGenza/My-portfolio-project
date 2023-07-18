@@ -4,7 +4,8 @@
 .about {
   display: flex;
   text-align: justify;
-  color: $text-color-dark;
+  color: var(--text-color);
+  transition: $transition;  
   &__wrapper {
     display: flex;
     flex-direction: column;

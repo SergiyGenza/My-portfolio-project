@@ -2,7 +2,8 @@
 @import "/src/assets/style/utils/mixins";
 
 .main {
-  background-color: $bg-dark;
+  background-color: var(--bg);
+  transition: $transition;
 }
 
 .presentation {
@@ -10,11 +11,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50rem;
+  // height: 50rem;
+  // padding: 20rem 0;
   background: url(/assets/images/Abstract.png) no-repeat;
   background-position: center;
-  // color: $text-color-dark;
-  color: $link-color-dark;
+  // color: var(--text-color);
+  color: var(--link-color);
 
   &__title {
     @include DM-bold;
@@ -36,8 +38,20 @@
 }
 
 .tech-stack {
-  padding: 20rem 0;
+  // padding: 20rem 0;
 }
 
 .projects {
+  // padding: 20rem 0;
+  // height: 50rem;
+}
+
+.btn__primary {
+  border-radius: 5px;
+  background: $accent-lavand;
+  font-size: 16px;
+  @include DM-medium;
+  width: 160px;
+  height: 48px;
+  color: $white;
 }

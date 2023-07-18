@@ -2,9 +2,10 @@
 @import "/src/assets/style/utils/mixins";
 
 .skills {
-  background-color: $bg-dark;
+  background-color: var(--bg);
+  transition: $transition;
   &__content {
-    color: $text-color-dark;
+    color: var(--text-color);
     text-align: center;
   }
   &__title {
@@ -14,7 +15,7 @@
   }
 
   &__text {
-    color: $text-color-secondary-dark;
+    color: var(--text-color-secondary);
     font-size: 32px;
     @include Poppins-regular;
     margin-bottom: 100px;

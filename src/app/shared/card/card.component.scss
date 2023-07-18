@@ -5,11 +5,12 @@
   max-width: 373px;
   line-height: 26px;
   font-family: $font-accent;
-  color: $text-color-dark;
-  background-color: $card-bg-dark;
+  color: var(--text-color-secondary);
+  background-color: var(--color-bg);
   border-radius: 28px;
-  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
-
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  transition: $transition;
+  
   &__contetn {
     padding: 27px 31px 25px 28px;
   }
@@ -19,26 +20,25 @@
   }
   &__title {
     text-align: center;
-    
+
     font-size: 28px;
     font-weight: $medium;
     margin-bottom: 17px;
   }
   &__text {
-    
     font-size: 18px;
     font-weight: $regular;
     margin-bottom: 12px;
   }
   &__info {
     font-size: 14px;
-    
+
     font-weight: 300;
     line-height: 26px;
     margin-bottom: 21px;
     &__title {
       font-size: 16px;
-      
+
       font-weight: 400;
       line-height: 26px;
     }

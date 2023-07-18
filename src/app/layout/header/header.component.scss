@@ -2,8 +2,12 @@
 @import "/src/assets/style/utils/mixins";
 
 .header {
-  background-color: black;
-  color: $white;
+  background-color: var(--layout);
+  color: var(--text-color);
+}
+
+.unpinned {
+  top: -70px;
 }
 
 .top-bar {
@@ -81,4 +85,3 @@
 .dark-mode-btn--active::before {
   left: 26px;
 }
-

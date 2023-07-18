@@ -6,26 +6,32 @@
 @import "./assets/style/base";
 
 body {
-  background-color: $bg-dark;
+  background-color: var(--bg);
+  padding-bottom: 66px;
 }
 
 html,
 body {
   height: 100%;
   position: relative;
+  scroll-behavior: smooth;
+
 }
 
 app-root {
   min-height: 100%;
   display: block;
   position: relative;
-  padding: 15rem 0 20rem 0; // height of the footer
+  // padding: 15rem 0 11.5rem 0; // height of the footer
+  padding: 0rem 0 11.5rem 0; // height of the footer
+
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
+  transition: $transition;
 }
 
 footer {

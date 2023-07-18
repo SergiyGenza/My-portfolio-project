@@ -1,8 +1,8 @@
-<header class="header">
+<header class="header" (scroll)="onscroll()" [ngClass]="unpined ? 'unpinned' : ''">
   <div class="container">
     <div class="top-bar">
       <div class="top-bar__title">
-        <h3 class="title"><a href="">{{mock.title}}</a></h3>
+        <h3 class="title"><a href="{{mock.link}}">{{mock.title}}</a></h3>
       </div>
       <div class="top-bar__nav">
         <nav class="nav">
@@ -15,7 +15,7 @@
           </ul>
         </nav>
       </div>
-      <button class="dark-mode-btn " id="dark-mode-btn" (click)="darkMode()"
+      <button class="dark-mode-btn" id="dark-mode-btn" (click)="themeSwicher()"
         [ngClass]="{'dark-mode-btn--active': isDarkMode}">
         <ng-container *ngFor="let btn of btnGroup">
           <img class="dark-mode-btn__icon" src="{{btn.src}}" alt="{{btn.alt}}">

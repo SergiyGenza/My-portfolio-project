@@ -28,15 +28,15 @@ export const TECH_STACK = [
     alt: 'angular logo',
   },
   {
+    src: '../../../assets/images/logos/rxjs-logo.png',
+    alt: 'rxjs logo',
+  },
+  {
     src: '../../../assets/images/logos/angular-logo.png',
     alt: 'angular logo',
   },
   {
     src: '../../../assets/images/logos/git-logo.png',
     alt: 'angular logo',
-  },
-  {
-    src: '../../../assets/images/logos/vscode-logo.png',
-    alt: 'vscode logo',
   },
 ]
