@@ -1,11 +1,11 @@
 @import "/src/assets/style/utils/variables";
 @import "/src/assets/style/utils/mixins";
 
-
 .footer {
-  // max-height: 200px;
   padding: 50px 0;
-  background-color: black;
+  background-color: var(--layout);
+  transition: $transition;
+  color: var(--text-color);
 }
 
 .socials {
@@ -18,10 +18,8 @@
 }
 
 .email {
-  color: $white;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   line-height: 150%;
   letter-spacing: -0.5px;
   @include DM-regular;

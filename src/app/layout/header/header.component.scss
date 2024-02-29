@@ -2,8 +2,13 @@
 @import "/src/assets/style/utils/mixins";
 
 .header {
-  background-color: $black;
-  color: $white;
+  background-color: var(--layout);
+  color: var(--text-color);
+  z-index: 1;
+}
+
+.unpinned {
+  top: -70px;
 }
 
 .top-bar {
@@ -80,33 +85,4 @@
 
 .dark-mode-btn--active::before {
   left: 26px;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 33px 0;
-  height: 650px;
-  // width: 650px;
-  background: url(/assets/images/Abstract.png) no-repeat;
-  background-position: center;
-
-  &__title {
-    @include DM-bold;
-    font-size: 60px;
-    margin-bottom: 20px;
-    margin-top: 162px;
-  }
-
-  &__text {
-    @include DM-medium;
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-}
-
-.abstraction {
-  height: 650px;
-  width: 650px;
 }

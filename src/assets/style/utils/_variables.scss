@@ -1,12 +1,63 @@
 // fonts
-$font-main:'DM Sans', sans-serif;
-$font-accent:'Poppins', sans-serif;
+$font-main: "DM Sans", sans-serif;
+$font-accent: "Poppins", sans-serif;
 $bold: 700;
 $medium: 500;
 $regular: 400;
 
-// colors
-$white: #FFF;
-$black: #171718;
-$accent-lavand: #5C62EC;
+//size
+$container: 1260px;
 
+// colors
+$white: #fff;
+$black: #171718;
+$accent-lavand: #5c62ec;
+$green-text: #018c0f;
+$ligth-green-bg: #d7ffe0;
+$devide-line: #ebeaed;
+
+// light theme
+$card-bg-dark: #363636;
+$text-color-dark: #cccccc;
+$text-color-secondary-dark: #cccccc;
+$link-color-dark: #fff;
+$bg-dark: #191919;
+$layot-dark: #000000;
+
+html[data-theme="dark"] {
+  --color-bg: #{$card-bg-dark};
+  --text-color: #{$text-color-dark};
+  --text-color-secondary: #{$text-color-secondary-dark};
+  --link-color: #{$link-color-dark};
+  --bg: #{$bg-dark};
+  --layout: #{$layot-dark};
+}
+
+// dark theme
+$card-bg: #FFF;
+$text-color: #42446e;
+$text-color-secondary: #666;
+$link-color: #000000;
+$bg: #f2f2f2;
+$layot: #ffffff;
+
+html[data-theme="light"] {
+  --color-bg: #{$card-bg};
+  --text-color: #{$text-color};
+  --text-color-secondary: #{$text-color-secondary};
+  --link-color: #{$link-color};
+  --bg: #{$bg};
+  --layout: #{$layot};
+}
+
+html[data-theme=""] {
+  --color-bg: #{$card-bg};
+  --text-color: #{$text-color};
+  --text-color-secondary: #{$text-color-secondary};
+  --link-color: #{$link-color};
+  --bg: #{$bg};
+  --layout: #{$layot};
+}
+
+//transition
+$transition: 0.3s linear;

@@ -3,4 +3,34 @@
 @import "./assets/style/utils/variables";
 @import "./assets/style/utils/mixins";
 
-@import "./assets/style/base"
+@import "./assets/style/base";
+
+body {
+  background-color: var(--bg);
+}
+
+html,
+body {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+app-root {
+  min-height: 100%;
+  display: block;
+  position: relative;
+  padding: 0rem 0 11.5rem 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: $transition;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

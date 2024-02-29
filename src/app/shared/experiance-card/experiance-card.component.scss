@@ -1,0 +1,55 @@
+@import "/src/assets/style/utils/variables";
+@import "/src/assets/style/utils/mixins";
+
+.job {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  font-size: 12px;
+  
+
+  &__title {
+    color: var(--text-color);
+    font-size: 20px;
+    letter-spacing: 1px;
+    @include Poppins-regular;
+  }
+  &__company {
+    color: var(--text-color-secondary);
+    letter-spacing: 1px;
+    @include Poppins-medium;
+  }
+  &__type {
+    color: $green-text;
+    text-align: center;
+    @include Poppins-medium;
+
+    border-radius: 100px;
+    background: $ligth-green-bg;
+    padding: 3px 20px;
+  }
+  &__time {
+    color: var(--text-color-secondary);
+    letter-spacing: 1px;
+    @include Poppins-medium;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+.block {
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  &__rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
