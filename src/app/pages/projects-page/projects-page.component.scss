@@ -2,7 +2,7 @@
 @import "/src/assets/style/utils/mixins";
 
 .projects {
-  background-color: var(--bg);
+  // background-color: var(--bg);
   transition: $transition;
   &__title {
     color: var(--text-color);

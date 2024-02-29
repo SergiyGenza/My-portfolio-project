@@ -7,24 +7,19 @@
 
 body {
   background-color: var(--bg);
-  padding-bottom: 66px;
 }
 
 html,
 body {
-  height: 100%;
   position: relative;
   scroll-behavior: smooth;
-
 }
 
 app-root {
   min-height: 100%;
   display: block;
   position: relative;
-  // padding: 15rem 0 11.5rem 0; // height of the footer
-  padding: 0rem 0 11.5rem 0; // height of the footer
-
+  padding: 0rem 0 11.5rem 0;
 }
 
 header {

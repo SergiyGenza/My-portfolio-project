@@ -17,7 +17,7 @@ export const HEADER = {
   ]
 };
 
-export const DARK_NODE_BTN = [
+export const DARK_MODE_BTN = [
   {
     src: '../assets/images/icons/sun.svg',
     alt: 'light mode'

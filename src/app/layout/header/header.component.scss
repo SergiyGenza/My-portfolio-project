@@ -4,6 +4,7 @@
 .header {
   background-color: var(--layout);
   color: var(--text-color);
+  z-index: 1;
 }
 
 .unpinned {

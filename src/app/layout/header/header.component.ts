@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { HEADER, DARK_NODE_BTN } from 'src/app/common/mocks/header';
+import { HEADER, DARK_MODE_BTN } from 'src/app/common/mocks/header';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -8,32 +9,16 @@ import { HEADER, DARK_NODE_BTN } from 'src/app/common/mocks/header';
 })
 export class HeaderComponent implements OnInit {
   mock = HEADER;
-  btnGroup = DARK_NODE_BTN;
-  isDarkMode: boolean = false;
-  unpined: boolean = false;
+  btnGroup = DARK_MODE_BTN;
 
+  unpined: boolean = false;
   startScroll: number = 0;
+  isDarkMode!: boolean;
+
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit(): void {
     this.checkUserPreferences();
-  }
-
-  checkUserPreferences() {
-    window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      this.isDarkMode = true;
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-      this.isDarkMode = false;
-    }
-  }
-
-  themeSwicher() {
-    this.isDarkMode = !this.isDarkMode;
-    this.isDarkMode ?
-      document.documentElement.setAttribute('data-theme', 'dark') :
-      document.documentElement.setAttribute('data-theme', 'light');
   }
 
   @HostListener('window:scroll', ['$event']) onscroll() {
@@ -46,5 +31,14 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  public onThemeChange() {
+    this.isDarkMode = this.themeService.changeTheme(this.isDarkMode);
+  }
+
+  private checkUserPreferences() {
+    this.themeService.checkUserPreferences().subscribe(
+      theme => this.isDarkMode = theme
+    )
+  }
 
 }

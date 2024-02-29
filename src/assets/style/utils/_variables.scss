@@ -50,5 +50,14 @@ html[data-theme="light"] {
   --layout: #{$layot};
 }
 
+html[data-theme=""] {
+  --color-bg: #{$card-bg};
+  --text-color: #{$text-color};
+  --text-color-secondary: #{$text-color-secondary};
+  --link-color: #{$link-color};
+  --bg: #{$bg};
+  --layout: #{$layot};
+}
+
 //transition
 $transition: 0.3s linear;

@@ -15,7 +15,7 @@
           </ul>
         </nav>
       </div>
-      <button class="dark-mode-btn" id="dark-mode-btn" (click)="themeSwicher()"
+      <button class="dark-mode-btn" id="dark-mode-btn" (click)="onThemeChange()"
         [ngClass]="{'dark-mode-btn--active': isDarkMode}">
         <ng-container *ngFor="let btn of btnGroup">
           <img class="dark-mode-btn__icon" src="{{btn.src}}" alt="{{btn.alt}}">
