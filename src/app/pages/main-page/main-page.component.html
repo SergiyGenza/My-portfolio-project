@@ -1,13 +1,11 @@
 <main class="main">
-  <section class="presentation wrapper" id="presentation">
-    <div class="presentation__title">
-      <h1> {{mainpage.title}}
-      </h1>
-    </div>
-    <div class="presentation__text">{{mainpage.text}}</div>
-    <button class="btn__primary">{{mainpage.bntText}}</button>
-  </section>
-  <app-tech-stack></app-tech-stack>
-  <app-projects-page></app-projects-page>
+  <app-section [title]="mainpage.title" [text]="mainpage.text" [wrapper]="true" [btnTitle]="mainpage.bntText"
+    [id]="'presentation'">
+  </app-section>
+  <app-section [title]="techStack.title" [text]="techStack.text" [wrapper]="true" [id]="'tech-stack'"
+    [iconsList]="techStack.icons">
+  </app-section>
+  <app-section [title]="project.title" [wrapper]="false" [id]="'projects'" [projectList]="true">
+  </app-section>
   <app-about-me-page></app-about-me-page>
 </main>

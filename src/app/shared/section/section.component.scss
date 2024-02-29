@@ -1,0 +1,65 @@
+@import "/src/assets/style/utils/variables";
+@import "/src/assets/style/utils/mixins";
+
+
+section#projects {
+  padding: 4rem 0;
+}
+
+section#presentation .container .content .title {
+  color: var(--link-color);
+  @include DM-bold;
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 162px;
+  text-align: center
+}
+
+section#presentation .container .content .text {
+  color: var(--link-color);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.content {
+  color: var(--text-color);
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  text-align: center;
+  @include Poppins-bold;
+}
+
+.text {
+  color: var(--text-color-secondary);
+  font-size: 32px;
+  @include Poppins-regular;
+  margin-bottom: 100px;
+
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 150px;
+  row-gap: 70px;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(323px, 1fr));
+  justify-items: center;
+  gap: 50px;
+  row-gap: 65px;
+  margin-top: 2rem;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+}

@@ -7,11 +7,6 @@
 }
 
 .presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
   color: var(--link-color);
 
   &__title {
@@ -19,6 +14,7 @@
     font-size: 60px;
     margin-bottom: 20px;
     margin-top: 162px;
+    text-align: center
   }
 
   &__text {

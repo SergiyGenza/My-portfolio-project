@@ -1,4 +1,7 @@
-export const TECH_STACK = [
+export const TECH_STACK = {
+  title: 'My Tech Stack',
+  text: 'Technologies I’ve been working with recently',
+  icons: [
   {
     src: 'assets/images/logos/html-logo.png',
     alt: 'angular logo',
@@ -39,4 +42,4 @@ export const TECH_STACK = [
     src: 'assets/images/logos/git-logo.png',
     alt: 'angular logo',
   },
-]
+]}

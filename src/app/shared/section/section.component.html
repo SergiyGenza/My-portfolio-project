@@ -1,0 +1,21 @@
+<section [ngClass]="{'wrapper': wrapper}" id="{{id}}">
+  <div class="container">
+    <div class="content">
+      <h2 class="title">{{title}}</h2>
+      <p *ngIf="text" class="text">{{text}}</p>
+
+      <ul *ngIf="iconsList" class="icon-list">
+        <li *ngFor="let img of iconsList">
+          <img src="{{img.src}}" alt="{{img.alt}}">
+        </li>
+      </ul>
+
+      <div class="grid-list" *ngIf="projectList">
+        <app-card *ngFor="let i of Arr(num).fill(1)">
+        </app-card>
+      </div>
+
+      <button *ngIf="btnTitle" class="btn__primary">{{btnTitle}}</button>
+    </div>
+  </div>
+</section>
