@@ -5,8 +5,8 @@
   display: flex;
   text-align: justify;
   color: var(--text-color);
-  transition: $transition;  
-  &__wrapper {
+
+  &__container {
     display: flex;
     flex-direction: column;
     gap: 38px;
@@ -15,8 +15,8 @@
 }
 
 .description {
-  &__title {
-  }
+  &__title {}
+
   &__text {
     max-width: 708px;
     font-size: 18px;
@@ -24,17 +24,17 @@
     @include Poppins-regular;
   }
 }
+
 .experiance {
-  &__title {
-  }
-  &__group {
-  }
+  &__title {}
+
+  &__group {}
 }
+
 .education {
-  &__title {
-  }
-  &__group {
-  }
+  &__title {}
+
+  &__group {}
 }
 
 .title {
