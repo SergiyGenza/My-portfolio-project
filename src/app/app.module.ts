@@ -8,9 +8,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
 
 import { MainPageComponent } from './pages/main-page/main-page.component';
-import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { AboutMePageComponent } from './pages/about-me-page/about-me-page.component';
-import { TechStackComponent } from './pages/tech-stack/tech-stack.component';
 
 
 @NgModule({
@@ -19,9 +17,7 @@ import { TechStackComponent } from './pages/tech-stack/tech-stack.component';
     HeaderComponent,
     FooterComponent,
     MainPageComponent,
-    ProjectsPageComponent,
     AboutMePageComponent,
-    TechStackComponent,
   ],
   imports: [
     BrowserModule,
