@@ -1,14 +1,15 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, OnInit } from '@angular/core';
 import { HEADER, DARK_MODE_BTN } from 'src/app/common/mocks/header';
 import { ThemeService } from 'src/app/services/theme.service';
 import { NgClass, NgFor } from '@angular/common';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss'],
-    standalone: true,
-    imports: [NgClass, NgFor]
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
+  standalone: true,
+  imports: [NgClass, NgFor],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent implements OnInit {
   mock = HEADER;

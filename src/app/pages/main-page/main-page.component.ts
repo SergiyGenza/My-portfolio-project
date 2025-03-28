@@ -6,11 +6,11 @@ import { SectionComponent } from '../../shared/section/section.component';
 import { AboutMePageComponent } from '../about-me-page/about-me-page.component';
 
 @Component({
-    selector: 'app-main-page',
-    templateUrl: './main-page.component.html',
-    styleUrls: ['./main-page.component.scss'],
-    standalone: true,
-    imports: [SectionComponent, AboutMePageComponent]
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.scss'],
+  standalone: true,
+  imports: [SectionComponent, AboutMePageComponent],
 })
 export class MainPageComponent {
   mainpage = MAIN_PAGE;

@@ -12,17 +12,19 @@
       <h2 class="experiance__title title">
         {{exp.title}}
       </h2>
-      <div class="experiance__group" *ngFor="let experiance of exp.experiance">
+      @for(experiance of exp.experiance; track $index){
+      <div class="experiance__group">
         <app-experiance-card [content]="experiance" class="devider"></app-experiance-card>
-      </div>
+      </div>}
     </div>
     <div class="education">
       <h2 class="education__title title">
         {{ed.title}}
       </h2>
-      <div class="education__group" *ngFor="let education of ed.education">
+      @for(education of ed.education; track $index){
+      <div class="education__group">
         <app-experiance-card [content]="education" class="devider"></app-experiance-card>
-      </div>
+      </div>}
     </div>
   </div>
 </section>

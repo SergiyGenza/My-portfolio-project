@@ -17,9 +17,8 @@
       </div>
       <button class="dark-mode-btn" id="dark-mode-btn" (click)="onThemeChange()"
         [ngClass]="{'dark-mode-btn--active': isDarkMode}">
-        <ng-container *ngFor="let btn of btnGroup">
-          <img class="dark-mode-btn__icon" src="{{btn.src}}" alt="{{btn.alt}}">
-        </ng-container>
+        @for(btn of btnGroup; track $index){
+        <img class="dark-mode-btn__icon" src="{{btn.src}}" alt="{{btn.alt}}">}
       </button>
     </div>
   </div>
